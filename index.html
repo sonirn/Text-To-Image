@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.25/dist/shoelace/shoelace.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎨 Text to Image Generator</h1>
+        
+        <div class="generator-box">
+            <sl-input class="prompt-input" placeholder="Describe your image..." clearable></sl-input>
+            <sl-button class="generate-btn" variant="primary">Generate Image</sl-button>
+        </div>
+
+        <div class="gallery">
+            <h2>Community Gallery</h2>
+            <div class="image-grid" id="gallery"></div>
+        </div>
+    </div>
+
+    <!-- Firebase and UI Libraries -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.25/dist/shoelace/shoelace.esm.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
